@@ -48,8 +48,8 @@ class ContactForm(forms.ModelForm):
                 'Primeiro nome não pode ser igual ao segundo',
                 code='invalid'
             )
-        self.add_error('first_name', msg)
-        self.add_error('last_name', msg)
+            self.add_error('first_name', msg)
+            self.add_error('last_name', msg)
 
         return super().clean()
 
